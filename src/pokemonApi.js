@@ -17,11 +17,7 @@ export const totalPokemonsByTwoTypes = async(pokemonTypeOne, pokemonTypeTwo) => 
         return response.json()
     })
 
-    let dataTypesTotal = parseInt(dataTypeOne.pokemon.length) + parseInt(dataTypeTwo.pokemon.length)
-    const dataPokemonTypes = [...dataTypeOne.pokemon, ...dataTypeTwo.pokemon]
-    // return 'Total Pokemons with ' + pokemonTypeOne + ' type and ' + pokemonTypeTwo +' type: ' + dataTypesTotal
-    return dataPokemonTypes
-
+    return [...dataTypeOne.pokemon, ...dataTypeTwo.pokemon]
 }
 
 export const getPokemonByNameOrId = async (pokemon) => {
