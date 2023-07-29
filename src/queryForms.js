@@ -1,5 +1,11 @@
 import {useState} from "react";
-import {totalPokemonsByTwoTypes, totalPokemonsByType, getPokemonByNameOrId, getPokemonsByIds, getPokemonBelongsToType} from "./pokemonApi";
+import {
+    totalPokemonsByTwoTypes,
+    totalPokemonsByType,
+    getPokemonByNameOrId,
+    getPokemonsByIds,
+    getPokemonBelongsToType
+} from "./pokemonApi";
 
 function QueryResultApiData(props) {
     if (props.data) {
